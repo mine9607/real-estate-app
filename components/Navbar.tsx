@@ -8,8 +8,8 @@ const Navbar = () => {
       <div className="flex-grow flex pl-8 pr-32">
         <ul className="flex gap-2 text-black text-xl justify-between w-full">
           <Link href={"/homes"}>Buy</Link>
-          <Link href={"/"}>Rent</Link>
-          <Link href={"/"}>Sell</Link>
+          <Link href={"/homes/for_rent"}>Rent</Link>
+          <Link href={"/sell"}>Sell</Link>
           <Link href={"/"}>Home Loans</Link>
           <Link href={"/"}>Agent finder</Link>
         </ul>

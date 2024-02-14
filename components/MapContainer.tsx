@@ -9,8 +9,8 @@ const MapContainer = () => {
     width: "100%",
   };
   const defaultCenter = {
-    lat: 41.3851,
-    lng: 2.1734,
+    lat: 43.39843,
+    lng: -80.29543,
   };
 
   return (
