@@ -1,12 +1,18 @@
-import Image from "next/image";
-import OAuthButton from "./components/OAuthButton";
+"use client";
+import { signIn, signOut } from "next-auth/react";
+import OAuthButton from "../components/OAuthButton";
 
 export default function Home() {
   return (
     <div>
       <h1>Home</h1>
-      <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-      <OAuthButton text={"Login"} />
+      <div>
+        <p></p>
+        <OAuthButton text={"Google Login"} onClick={() => signIn("google")} />
+        <OAuthButton text={"Github Login"} onClick={() => signIn("github")} />
+        <OAuthButton text={"Log Out"} onClick={() => signOut()} />
+      </div>
+      {/* Add conditional rendering of the OAuthButton based on text prop passed */}
     </div>
   );
 }
