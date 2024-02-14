@@ -94,7 +94,7 @@ const Footer = () => {
         height={160}
         alt="footer art"
         className="mt-20 mb-2"
-      ></Image>
+      />
     </>
   );
 };
