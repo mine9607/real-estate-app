@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
+    "@react-google-maps/api": "^2.19.3",
+    "@types/google.maps": "^3.55.3",
     "next": "14.1.0",
     "next-auth": "^4.24.5",
     "react": "^18",
